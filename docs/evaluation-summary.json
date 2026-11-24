@@ -1,0 +1,222 @@
+{
+  "mode": "llm",
+  "total": 104,
+  "passed": 93,
+  "query_metrics": {
+    "execution_rate": 1.0,
+    "result_accuracy": 0.8913043478260869,
+    "fallback_rate": 0.0,
+    "session_accuracy": 0.0,
+    "p50_ms": 7633,
+    "p95_ms": 19001
+  },
+  "guard_metrics": {
+    "dangerous_rejection_rate": 1.0,
+    "legal_allow_rate": 1.0
+  },
+  "breakdown": {
+    "category": {
+      "join": {
+        "passed": 23,
+        "total": 23,
+        "rate": 1.0
+      },
+      "fanout": {
+        "passed": 6,
+        "total": 6,
+        "rate": 1.0
+      },
+      "having": {
+        "passed": 4,
+        "total": 4,
+        "rate": 1.0
+      },
+      "time": {
+        "passed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "anti_join": {
+        "passed": 8,
+        "total": 8,
+        "rate": 1.0
+      },
+      "distinct": {
+        "passed": 2,
+        "total": 7,
+        "rate": 0.2857142857142857
+      },
+      "null": {
+        "passed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "aggregate": {
+        "passed": 4,
+        "total": 5,
+        "rate": 0.8
+      },
+      "ratio": {
+        "passed": 4,
+        "total": 7,
+        "rate": 0.5714285714285714
+      },
+      "duration": {
+        "passed": 2,
+        "total": 2,
+        "rate": 1.0
+      },
+      "self_join": {
+        "passed": 2,
+        "total": 2,
+        "rate": 1.0
+      },
+      "topk": {
+        "passed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "window": {
+        "passed": 2,
+        "total": 2,
+        "rate": 1.0
+      },
+      "formula": {
+        "passed": 2,
+        "total": 2,
+        "rate": 1.0
+      },
+      "wide_schema": {
+        "passed": 3,
+        "total": 4,
+        "rate": 0.75
+      },
+      "metric": {
+        "passed": 2,
+        "total": 2,
+        "rate": 1.0
+      },
+      "enum": {
+        "passed": 1,
+        "total": 1,
+        "rate": 1.0
+      },
+      "group": {
+        "passed": 1,
+        "total": 1,
+        "rate": 1.0
+      },
+      "empty": {
+        "passed": 1,
+        "total": 1,
+        "rate": 1.0
+      },
+      "multi_turn": {
+        "passed": 5,
+        "total": 6,
+        "rate": 0.8333333333333334
+      },
+      "guard": {
+        "passed": 12,
+        "total": 12,
+        "rate": 1.0
+      }
+    },
+    "difficulty": {
+      "medium": {
+        "passed": 64,
+        "total": 73,
+        "rate": 0.8767123287671232
+      },
+      "hard": {
+        "passed": 24,
+        "total": 26,
+        "rate": 0.9230769230769231
+      },
+      "easy": {
+        "passed": 5,
+        "total": 5,
+        "rate": 1.0
+      }
+    },
+    "domain": {
+      "电商零售": {
+        "passed": 10,
+        "total": 10,
+        "rate": 1.0
+      },
+      "SaaS 订阅": {
+        "passed": 8,
+        "total": 10,
+        "rate": 0.8
+      },
+      "物流履约": {
+        "passed": 8,
+        "total": 10,
+        "rate": 0.8
+      },
+      "银行金融": {
+        "passed": 10,
+        "total": 10,
+        "rate": 1.0
+      },
+      "医院医疗": {
+        "passed": 8,
+        "total": 10,
+        "rate": 0.8
+      },
+      "在线教育": {
+        "passed": 10,
+        "total": 10,
+        "rate": 1.0
+      },
+      "制造供应链": {
+        "passed": 8,
+        "total": 10,
+        "rate": 0.8
+      },
+      "宽库": {
+        "passed": 3,
+        "total": 4,
+        "rate": 0.75
+      },
+      "演示电商": {
+        "passed": 11,
+        "total": 12,
+        "rate": 0.9166666666666666
+      },
+      "多轮": {
+        "passed": 5,
+        "total": 6,
+        "rate": 0.8333333333333334
+      },
+      "护栏": {
+        "passed": 12,
+        "total": 12,
+        "rate": 1.0
+      }
+    },
+    "split": {
+      "dev": {
+        "passed": 42,
+        "total": 47,
+        "rate": 0.8936170212765957
+      },
+      "holdout": {
+        "passed": 51,
+        "total": 57,
+        "rate": 0.8947368421052632
+      }
+    }
+  },
+  "config": {
+    "SCHEMA_MODE": "auto",
+    "TOP_K": 8,
+    "FULL_SCHEMA_MAX": 1000,
+    "MAX_SCHEMA_TABLES": 1000,
+    "CONTEXT_RECENT": 4,
+    "MEMORY_STATE_CHARS": 1200,
+    "MEMORY_OLD_LIMIT": 6
+  },
+  "note": "首轮原始结果：存在最近30天默认规则与gold全时间口径冲突；多轮6/6结果正确但主题切换标记1项失败。非生产验收结论。"
+}

@@ -1,0 +1,45 @@
+# Local credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+.aws/
+.codex/
+.agents/
+.vscode/
+.idea/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Runtime databases, query logs, conversations and exports
+backend/data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.csv
+*.log
+backend/eval/results/
+
+# Dependencies and generated output
+node_modules/
+frontend/dist/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local release preparation
+.preview/
+.tools/
+.release/
+*.zip
+Thumbs.db
+.DS_Store

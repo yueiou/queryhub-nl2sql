@@ -1,0 +1,48 @@
+name: Checks
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  public-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/check_public_release.py --head
+
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r backend/requirements-core.txt
+      - run: python -m unittest discover -s backend/eval -p test_eval_runner.py
+      - run: python backend/eval/build_cases.py
+      - name: Check reproducible case artifacts
+        run: git diff --exit-code -- backend/eval/questions.jsonl backend/eval/CASES.md
+      - name: Validate demo standard SQL and guards
+        run: |
+          python backend/scripts/seed_demo.py
+          python backend/scripts/eval_run.py --mode validate --split dev --category metric
+          python backend/scripts/eval_run.py --mode validate --category guard
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+        working-directory: frontend
+      - run: npm run build
+        working-directory: frontend

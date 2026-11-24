@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
+ <title id="title">QueryHub — Natural language to verifiable SQL</title>
+ <desc id="desc">Blue architectural banner showing a question flowing through SQL to a data answer.</desc>
+ <defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1730"/><stop offset="1" stop-color="#152e58"/></linearGradient>
+  <linearGradient id="accent"><stop stop-color="#68d7ff"/><stop offset="1" stop-color="#a9baff"/></linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 H 0 V 40" fill="none" stroke="#8ab4ff" stroke-opacity=".06"/></pattern>
+ </defs>
+ <rect width="1280" height="340" rx="24" fill="url(#bg)"/>
+ <rect width="1280" height="340" rx="24" fill="url(#grid)"/>
+ <circle cx="1205" cy="35" r="190" fill="#4a7bff" opacity=".06"/>
+ <rect x="62" y="58" width="111" height="27" rx="13" fill="#223e66"/>
+ <text x="78" y="77" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2" fill="#a8ceff">NL → SQL</text>
+ <text x="60" y="160" font-family="Segoe UI,Arial,sans-serif" font-size="66" font-weight="700" letter-spacing="-2" fill="white">QueryHub</text>
+ <text x="64" y="205" font-family="Segoe UI,Microsoft YaHei,sans-serif" font-size="23" fill="#c0cde3">从一句业务问题，到可验证的数据答案</text>
+ <text x="64" y="274" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="2" fill="#8ba8cd">SCHEMA AWARE  /  READ ONLY  /  TRACEABLE</text>
+ <g font-family="Segoe UI,Arial,sans-serif">
+  <path d="M740 170 H784 M934 170 H978" stroke="url(#accent)" stroke-width="2"/>
+  <path d="m777 165 7 5-7 5m194-5 7 5-7 5" stroke="#98baff" fill="none"/>
+  <rect x="608" y="113" width="132" height="114" rx="17" fill="#1d3456" stroke="#527097"/>
+  <text x="630" y="150" font-size="12" letter-spacing="1" fill="#9fbbe0">QUESTION</text>
+  <path d="M632 174 H713 M632 186 H696 M632 198 H705" stroke="#8fdcff" stroke-width="4" stroke-linecap="round"/>
+  <rect x="784" y="98" width="150" height="144" rx="18" fill="#21477a" stroke="#71baff"/>
+  <text x="808" y="136" font-size="12" letter-spacing="2" fill="#bddaff">SQL AGENT</text>
+  <text x="808" y="176" font-size="23" font-weight="600" fill="white">SELECT</text>
+  <text x="808" y="204" font-family="Consolas,monospace" font-size="15" fill="#93d9ff">SUM(value)</text>
+  <rect x="978" y="113" width="154" height="114" rx="17" fill="#1d3456" stroke="#527097"/>
+  <text x="1000" y="148" font-size="12" letter-spacing="1" fill="#9fbbe0">DATA ANSWER</text>
+  <rect x="1002" y="185" width="15" height="20" rx="3" fill="#74b8ff"/>
+  <rect x="1028" y="171" width="15" height="34" rx="3" fill="#8fcfff"/>
+  <rect x="1054" y="180" width="15" height="25" rx="3" fill="#74b8ff"/>
+  <rect x="1080" y="158" width="15" height="47" rx="3" fill="#b4dcff"/>
+ </g>
+</svg>

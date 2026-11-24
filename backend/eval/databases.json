@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "ec_retail",
+    "name": "测试 · 电商零售 A",
+    "domain": "电商零售",
+    "scale": 0.8
+  },
+  {
+    "slug": "ec_market",
+    "name": "测试 · 电商零售 B",
+    "domain": "电商零售",
+    "scale": 0.8
+  },
+  {
+    "slug": "saas_cloud",
+    "name": "测试 · SaaS 订阅 A",
+    "domain": "SaaS 订阅",
+    "scale": 0.8
+  },
+  {
+    "slug": "saas_growth",
+    "name": "测试 · SaaS 订阅 B",
+    "domain": "SaaS 订阅",
+    "scale": 0.8
+  },
+  {
+    "slug": "log_parcel",
+    "name": "测试 · 物流履约 A",
+    "domain": "物流履约",
+    "scale": 0.8
+  },
+  {
+    "slug": "log_network",
+    "name": "测试 · 物流履约 B",
+    "domain": "物流履约",
+    "scale": 0.8
+  },
+  {
+    "slug": "bank_core",
+    "name": "测试 · 银行账户 A",
+    "domain": "银行金融",
+    "scale": 0.8
+  },
+  {
+    "slug": "bank_credit",
+    "name": "测试 · 银行账户 B",
+    "domain": "银行金融",
+    "scale": 0.8
+  },
+  {
+    "slug": "his_clinic",
+    "name": "测试 · 医院就诊 A",
+    "domain": "医院医疗",
+    "scale": 0.8
+  },
+  {
+    "slug": "his_lab",
+    "name": "测试 · 医院就诊 B",
+    "domain": "医院医疗",
+    "scale": 0.8
+  },
+  {
+    "slug": "edu_learning",
+    "name": "测试 · 在线教育 A",
+    "domain": "在线教育",
+    "scale": 0.8
+  },
+  {
+    "slug": "edu_exam",
+    "name": "测试 · 在线教育 B",
+    "domain": "在线教育",
+    "scale": 0.8
+  },
+  {
+    "slug": "mfg_production",
+    "name": "测试 · 制造供应链 A",
+    "domain": "制造供应链",
+    "scale": 0.8
+  },
+  {
+    "slug": "mfg_supply",
+    "name": "测试 · 制造供应链 B",
+    "domain": "制造供应链",
+    "scale": 0.8
+  },
+  {
+    "slug": "wide_150",
+    "name": "测试 · 150 表宽库",
+    "domain": "大 schema",
+    "scale": 0.8
+  }
+]
